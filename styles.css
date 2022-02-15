@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;900&display=swap");
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+#app {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(216, 225, 226);
+  font-family: "Exo 2", sans-serif;
+}
+
+h1 {
+  color: rgb(63, 104, 105);
+  font-weight: 900;
+  margin: 3% 0;
+  font-size: 60px;
+}
+
+label {
+  font-size: 16px;
+  color: rgb(66, 66, 66);
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+label:not(:first-of-type) {
+  margin-top: 15px;
+}
+
+input {
+  max-width: 256px;
+  border-radius: 6px;
+  border: 2px solid rgb(63, 104, 105);
+  height: 28px;
+  font-size: 18px;
+  color: rgb(63, 104, 105);
+}
+
+input:focus,
+input:focus-visible {
+  border: 2px solid rgb(63, 104, 105);
+  padding: 0 8px;
+}
+
+pre {
+  text-align: left;
+  background-color: rgb(216, 225, 226);
+  border-radius: 8px;
+  color: rgb(66, 66, 66);
+}
+
+code {
+  font-size: 1rem;
+}
+
+button {
+  border: none;
+  background-color: rgb(63, 104, 105);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 6px;
+  width: 262px;
+  margin: 25px 0 1rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+p {
+  color: rgb(66, 66, 66);
+  font-size: 18px;
+}

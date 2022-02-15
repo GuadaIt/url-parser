@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URL Parser</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/vue@3"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>URL Parser</h1>
+
+      <label for="url-format">Type a url format</label>
+      <input id="url-format" v-model="urlFormat" />
+      <label for="url-instance">Type a url instance</label>
+      <input id="url-instance" v-model="urlInstance" />
+
+      <button @click="parseUrl">Let's parse this b*tch!</button>
+
+      <p v-if="error">{{ error }}</p>
+
+      <pre v-if="hash.length"><code>
+    { 
+       <template v-for="param in hash">{{ param.label }}: {{ addQuotationMarks(param.value) }},  
+       </template>
+    }
+        </code></pre>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
